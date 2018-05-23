@@ -1,3 +1,5 @@
+[Live Preview](https://thijswaalders.github.io/Restaurant-Reviews-App-Stage-1/)
+
 # Mobile Web Specialist Certification Course
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
