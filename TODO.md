@@ -3,7 +3,7 @@
 - [x] Clone the [starter repository](https://github.com/udacity/mws-restaurant-stage-1)
 - [x] Get your [Google Maps API key](https://developers.google.com/maps/documentation/javascript/get-api-key) and replace YOUR_GOOGLE_MAPS_API_KEY on line 37 of index.html with your own key.
 - [ ] Convert the provided site to use a responsive design.
-        - Check out [Optimisations](https://classroom.udacity.com/nanodegrees/nd001/parts/0a11a6d9-a730-4f9b-ad79-035d1e46c3f3/modules/afa5ca8b-f8dc-4160-83ff-3e5ccc2e1972/lessons/3581758575/concepts/35678795280923), [Styling](https://classroom.udacity.com/nanodegrees/nd001/parts/4942f4d7-a48d-4794-9eb0-404b3ed3cfe1/modules/d91b4314-da9f-45ea-902e-0b1fb5a06c34/lessons/8085130355/concepts/80792807020923) and [Responsive Images](https://classroom.udacity.com/courses/ud882).
+        - Check out [Optimisations](https://classroom.udacity.com/nanodegrees/nd001/parts/0a11a6d9-a730-4f9b-ad79-035d1e46c3f3/modules/afa5ca8b-f8dc-4160-83ff-3e5ccc2e1972/lessons/3581758575/concepts/35678795280923), [Styling](https://classroom.udacity.com/nanodegrees/nd001/parts/4942f4d7-a48d-4794-9eb0-404b3ed3cfe1/modules/d91b4314-da9f-45ea-902e-0b1fb5a06c34/lessons/8085130355/concepts/80792807020923) and [Responsive Images](httpgrunts://classroom.udacity.com/courses/ud882).
     - [ ] Bootstrap and other CSS frameworks should not be used; all responsiveness should be done with CSS.
     - [ ] Use appropriate document type declaration and viewport tags
             - Check out [Setting the Viewport](https://classroom.udacity.com/nanodegrees/nd001/parts/0a11a6d9-a730-4f9b-ad79-035d1e46c3f3/modules/afa5ca8b-f8dc-4160-83ff-3e5ccc2e1972/lessons/94d40e3d-d0b8-4c04-bc92-036759492d28/concepts/35764085970923#).

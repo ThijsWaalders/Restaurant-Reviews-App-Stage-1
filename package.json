@@ -1,0 +1,38 @@
+{
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "name": "restaurant-reviews-app",
+  "description": "[Live Preview](https://thijswaalders.github.io/Restaurant-Reviews-App-Stage-1/)",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-responsive-images": "^1.10.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThijsWaalders/Restaurant-Reviews-App-Stage-1.git"
+  },
+  "keywords": [
+    "restaurant",
+    "review",
+    "app"
+  ],
+  "author": "Thijs/Udacity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThijsWaalders/Restaurant-Reviews-App-Stage-1/issues"
+  },
+  "homepage": "https://github.com/ThijsWaalders/Restaurant-Reviews-App-Stage-1#readme"
+}
