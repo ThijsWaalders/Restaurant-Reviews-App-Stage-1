@@ -4,19 +4,6 @@ let restaurants,
 var map
 var markers = []
 
-// // Register Service Worker
-// IndexController.prototype._registerServiceWorker = function() {
-//   // Register service worker
-//   if (!navigator.serviceWorker) return;
-
-//   navigator.serviceWorker.register('/sw.js').then(function() {
-//     console.log('Registration successful!');
-//   }).catch(function() {
-//     console.log('Registration failed!');
-//   });
-// };
-
-
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -187,5 +174,18 @@ addMarkersToMap = (restaurants = self.restaurants) => {
       window.location.href = marker.url
     });
     self.markers.push(marker);
+  });
+}
+
+// Register Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/js/sw/index.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
   });
 }

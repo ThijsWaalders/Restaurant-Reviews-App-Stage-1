@@ -285,13 +285,12 @@ nav h1 a {
 .wrapper {
   display: grid;
   width: 100%;
-  /* height: auto; */
   grid-template-areas: "head head head head"
                        "map map map map"
                        "filter filter filter filter"
                        "item item item item"
                        "foot foot foot foot";
-  grid-template-rows: 1fr auto auto auto auto;
+  grid-template-rows: 1fr auto auto auto 50px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -305,17 +304,14 @@ header {
 
 .item1 {
   grid-area: map;
-  background-color: #ffa08c;
 }
 
 .item2 {
   grid-area: filter;
-  /* background-color: #ffff64; */
 }
 
 .item3 {
   grid-area: item;
-  background-color: #8cffa0;
 }
 
 #restaurants-list li h1,
@@ -345,7 +341,6 @@ header {
   margin-bottom: 15px;
   border: none;
   width: 100%;
-  /* padding: 0 5px 5px 5px; */
 }
 
 #restaurants-list {
@@ -357,7 +352,6 @@ header {
 #restaurants-list .restaurant-img {
   width: 100%;
   max-width: 30px;
-  /* margin-left: -5px; */
   margin-top: -15px;
 }
 
@@ -369,27 +363,14 @@ header {
   h1#restaurant-name {
     font-size: 1.8em;
   }
-  /* h1#restaurant-name {
-    font-size: 1.4em;
-  } */
-
-  #restaurants-list p {
+   #restaurants-list p {
     font-size: 1.3em;
   }
   .filter-options select {
     width: 42%;
   }
 }
-/*
-@media only screen and (min-width: 552px) {
-  .wrapper {
-    grid-template-rows: 250px;
-  }
-} */
 @media only screen and (min-width: 560px) {
-/* .wrapper {
-  grid-template-rows: 150px auto auto auto auto;
-  } */
   nav h1 a {
     font-size: 1.5em;
   }
@@ -444,12 +425,7 @@ header {
     top: 262px;
     position: relative;
   }
-  /* #restaurants-list li {
-    padding: 0 20px 0 20px;
-  } */
-  /* #restaurants-list .restaurant-img {
-    min-width: 80%; */
-  }
+}
 @media only screen and (min-width: 978px) {
   #restaurants-list li h1, #restaurants-list p, #restaurants-list li a {
     margin: 15px 0 30px 0;
@@ -537,7 +513,6 @@ nav {
 #map-container {
   position: relative;
   width: 100%;
-  /* max-height: 350px; */
   grid-area: map;
 }
 
@@ -547,7 +522,7 @@ nav {
 
 #footer {
   grid-area: foot;
-  padding: unset;
+  padding: 15px 0 15px 0;
 }
 
 .inside #footer {
@@ -580,4 +555,16 @@ nav {
 
 
 /* ARIA / FOCUS part */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #01447e;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
 
+.skip-link:focus {
+  top: 0;
+}
