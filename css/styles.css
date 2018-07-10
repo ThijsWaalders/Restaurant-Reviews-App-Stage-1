@@ -161,7 +161,7 @@ nav h1 a {
 #restaurants-list li h1 {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 14pt;
+  /* font-size: 14pt; */
   font-weight: 200;
   letter-spacing: 0;
   line-height: 1.3;
@@ -228,13 +228,13 @@ nav h1 a {
 	width: 100%;
 }
 #restaurant-address {
-  font-size: 12pt;
+  font-size: 1.2em;
   margin: 10px 0px;
 }
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 12pt;
+  font-size: 1.3em;
   font-weight: 300;
   letter-spacing: 10px;
   margin: 0 0 20px;
@@ -254,7 +254,7 @@ nav h1 a {
 }
 #reviews-container h2 {
   color: #f58500;
-  font-size: 24pt;
+  font-size: 1.7em;
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
@@ -295,6 +295,9 @@ nav h1 a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+h1 {
+  font-size: 1.2em;
+}
 header {
   grid-area: head;
   background-color: #8ca0ff;
@@ -362,9 +365,14 @@ header {
   nav h1 a {
     font-size: 1.4em;
   }
-  #restaurants-list li h1 {
+  #restaurants-list li h1,
+  h1#restaurant-name {
     font-size: 1.8em;
   }
+  /* h1#restaurant-name {
+    font-size: 1.4em;
+  } */
+
   #restaurants-list p {
     font-size: 1.3em;
   }
@@ -387,12 +395,54 @@ header {
   }
   #restaurants-list {
     margin: auto;
+    background-color: white;
   }
-  #restaurants-list li h1 {
+  #restaurants-list li h1,
+  h1#restaurant-name {
     font-size: 2em;
   }
   #restaurants-list p {
     font-size: 1.5em;
+  }
+  #restaurants-list li {
+    display: grid;
+    height: 100%;
+    grid-template-areas: "imag info";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #ccc;
+  }
+  #restaurants-list .restaurant-img {
+    grid-area: imag;
+    margin: auto;
+    height: 100%;
+    width: 30vw;
+  }
+  #restaurants-list li h1 {
+    position: relative;
+    grid-area: info;
+    margin: 15px;
+  }
+  #restaurants-list p {
+    grid-area: info;
+    margin: auto auto auto 15px;
+  }
+  #restaurants-list li p:first-of-type {
+    position: relative;
+    top: 20px
+  }
+  #restaurants-list li p:last-of-type {
+    position: relative;
+    top: 60px
+  }
+  #restaurants-list li a {
+    grid-area: info;
+    margin: 15px;
+    height: 48px;
+    width: auto;
+    top: 262px;
+    position: relative;
   }
   /* #restaurants-list li {
     padding: 0 20px 0 20px;
@@ -403,6 +453,42 @@ header {
 @media only screen and (min-width: 978px) {
   #restaurants-list li h1, #restaurants-list p, #restaurants-list li a {
     margin: 15px 0 30px 0;
+  }
+  #restaurants-list li {
+    display: grid;
+    height: 100%;
+    grid-template-areas: "imag info";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #ccc;
+  }
+  #restaurants-list .restaurant-img {
+    grid-area: imag;
+  }
+  #restaurants-list li h1 {
+    position: relative;
+    grid-area: info;
+    margin: 15px;
+  }
+  #restaurants-list p {
+    grid-area: info;
+    margin: auto auto auto 15px;
+  }
+  #restaurants-list li p:first-of-type {
+    position: relative;
+    top: 20px
+  }
+  #restaurants-list li p:last-of-type {
+    position: relative;
+    top: 60px
+  }
+  #restaurants-list li a {
+    grid-area: info;
+    margin: 15px;
+    height: 48px;
+    width: auto;
+    top: 262px;
+    position: relative;
   }
 }
 
@@ -489,3 +575,9 @@ nav {
 #reviews-container h2 {
   padding: 15px;
 }
+
+
+
+
+/* ARIA / FOCUS part */
+
