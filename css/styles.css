@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
+
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -261,9 +262,9 @@ h2 {
 #reviews-container {
   padding: 30px 40px 80px;
 }
-#reviews-container h2 {
+#reviews-container h4 {
   color: #f58500;
-  font-size: 1.7em;
+  font-size: 1.4em;
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
@@ -560,7 +561,12 @@ nav {
   padding: 15px;
 }
 
-
+h4 {
+  color: orange;
+  position: relative;
+  left: 20px;
+  bottom: -15px;
+}
 
 
 /* ARIA / FOCUS part */
